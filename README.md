@@ -1,6 +1,6 @@
 ﻿# NexTech Solutions 企业知识库 Agent
 
-基于 Spring AI 的企业内部知识库智能问答平台，支持 RAG 知识库检索、多轮对话、工具调用、MCP 服务，以及基于 ReAct 模式的 **EnterpriseKbSuperAgent** 自主规划超级智能体。
+基于 Spring AI 的企业内部知识库智能问答平台，支持 RAG 知识库检索、多轮对话、工具调用、MCP 服务，以及基于 ReAct 模式的 **EnterpriseKbSuperAgent** 自主规划智能体。
 
 ## 项目功能
 
