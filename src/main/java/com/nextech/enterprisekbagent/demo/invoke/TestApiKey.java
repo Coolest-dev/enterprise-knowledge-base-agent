@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.invoke;
+package com.nextech.enterprisekbagent.demo.invoke;
 
 /**
  * 仅用于测试获取 API Key

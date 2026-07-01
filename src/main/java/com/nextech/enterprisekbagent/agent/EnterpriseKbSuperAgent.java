@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.agent;
+package com.nextech.enterprisekbagent.agent;
 
 import com.nextech.enterprisekbagent.advisor.MyLoggerAdvisor;
 import org.springframework.ai.chat.client.ChatClient;

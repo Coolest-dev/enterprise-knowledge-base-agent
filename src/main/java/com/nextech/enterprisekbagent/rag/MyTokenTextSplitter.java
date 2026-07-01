@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.rag;
+package com.nextech.enterprisekbagent.rag;
 
 import org.springframework.ai.document.Document;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;

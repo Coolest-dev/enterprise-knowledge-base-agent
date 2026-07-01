@@ -52,7 +52,17 @@ export const chatWithManus = (message) => {
   return connectSSE('/ai/manus/chat', { message })
 }
 
+// Generate summary for a selected enterprise document section
+export const summarizeDocumentSection = (sectionText, style = 'brief', maxWords = 200) => {
+  return request.post('/ai/knowledge_base_app/summary', {
+    sectionText,
+    style,
+    maxWords
+  })
+}
+
 export default {
   chatWithKnowledgeBaseApp,
-  chatWithManus
-} 
+  chatWithManus,
+  summarizeDocumentSection
+}

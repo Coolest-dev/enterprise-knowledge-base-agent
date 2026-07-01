@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.rag;
+package com.nextech.enterprisekbagent.rag;
 
 import com.alibaba.cloud.ai.dashscope.api.DashScopeApi;
 import com.alibaba.cloud.ai.dashscope.rag.DashScopeDocumentRetriever;

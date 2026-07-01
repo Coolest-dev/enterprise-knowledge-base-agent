@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.tools;
+package com.nextech.enterprisekbagent.tools;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;

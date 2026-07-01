@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.controller;
+package com.nextech.enterprisekbagent.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

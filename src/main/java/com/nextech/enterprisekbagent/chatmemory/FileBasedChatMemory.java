@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.chatmemory;
+package com.nextech.enterprisekbagent.chatmemory;
 
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;

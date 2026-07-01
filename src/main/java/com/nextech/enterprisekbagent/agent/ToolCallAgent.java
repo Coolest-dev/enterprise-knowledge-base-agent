@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.agent;
+package com.nextech.enterprisekbagent.agent;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;

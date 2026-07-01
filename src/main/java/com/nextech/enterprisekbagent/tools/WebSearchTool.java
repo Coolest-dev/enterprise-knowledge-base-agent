@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.tools;
+package com.nextech.enterprisekbagent.tools;
 
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;

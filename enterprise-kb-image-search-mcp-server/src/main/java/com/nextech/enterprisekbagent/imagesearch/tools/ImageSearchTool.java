@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.imagesearch.tools;
+package com.nextech.enterprisekbagent.imagesearch.tools;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;

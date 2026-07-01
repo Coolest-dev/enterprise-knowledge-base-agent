@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.invoke;
+package com.nextech.enterprisekbagent.demo.invoke;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.json.JSONObject;

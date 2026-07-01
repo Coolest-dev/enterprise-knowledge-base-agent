@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.rag;
+package com.nextech.enterprisekbagent.rag;
 
 import jakarta.annotation.Resource;
 import org.springframework.ai.document.Document;

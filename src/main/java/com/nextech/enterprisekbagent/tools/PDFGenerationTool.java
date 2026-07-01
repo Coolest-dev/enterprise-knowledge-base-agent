@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.tools;
+package com.nextech.enterprisekbagent.tools;
 
 import cn.hutool.core.io.FileUtil;
 import com.itextpdf.kernel.font.PdfFont;

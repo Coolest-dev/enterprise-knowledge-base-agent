@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.invoke;
+package com.nextech.enterprisekbagent.demo.invoke;
 
 import jakarta.annotation.Resource;
 import org.springframework.ai.chat.messages.AssistantMessage;

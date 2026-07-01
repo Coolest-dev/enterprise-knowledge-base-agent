@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.rag;
+package com.nextech.enterprisekbagent.demo.rag;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;

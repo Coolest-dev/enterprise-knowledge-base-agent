@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent;
+package com.nextech.enterprisekbagent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

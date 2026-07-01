@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.constant;
+package com.nextech.enterprisekbagent.constant;
 
 /**
  * 文件常量

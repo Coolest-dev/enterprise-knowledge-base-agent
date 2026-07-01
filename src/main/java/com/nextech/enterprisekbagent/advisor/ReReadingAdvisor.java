@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.advisor;
+package com.nextech.enterprisekbagent.advisor;
 
 import org.springframework.ai.chat.client.ChatClientRequest;
 import org.springframework.ai.chat.client.ChatClientResponse;

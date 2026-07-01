@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.imagesearch;
+package com.nextech.enterprisekbagent.imagesearch;
 
 import com.nextech.enterprisekbagent.imagesearch.tools.ImageSearchTool;
 import org.springframework.ai.tool.ToolCallbackProvider;

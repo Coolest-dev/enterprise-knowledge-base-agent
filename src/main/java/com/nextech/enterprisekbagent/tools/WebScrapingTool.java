@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.tools;
+package com.nextech.enterprisekbagent.tools;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

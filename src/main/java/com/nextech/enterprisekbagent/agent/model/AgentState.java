@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.agent.model;
+package com.nextech.enterprisekbagent.agent.model;
 
 /**
  * 代理执行状态的枚举类

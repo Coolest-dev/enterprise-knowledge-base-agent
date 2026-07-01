@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.rag;
+package com.nextech.enterprisekbagent.rag;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.document.Document;

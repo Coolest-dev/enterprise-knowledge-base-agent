@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.invoke; // dashscope SDK 版本要求 >= 2.12.0
+package com.nextech.enterprisekbagent.demo.invoke; // dashscope SDK 版本要求 >= 2.12.0
 import java.util.Arrays;
 import java.lang.System;
 import com.alibaba.dashscope.aigc.generation.Generation;

@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.agent;
+package com.nextech.enterprisekbagent.agent;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,5 +1,6 @@
-﻿package com.nextech.enterprisekbagent.tools;
+package com.nextech.enterprisekbagent.tools;
 
+import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.support.ToolCallbacks;
 import org.springframework.ai.tool.ToolCallback;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,7 +17,12 @@ public class ToolRegistration {
     private String searchApiKey;
 
     @Bean
-    public ToolCallback[] allTools() {
+    public DocumentSummaryTool documentSummaryTool(ChatModel dashscopeChatModel) {
+        return new DocumentSummaryTool(dashscopeChatModel);
+    }
+
+    @Bean
+    public ToolCallback[] allTools(DocumentSummaryTool documentSummaryTool) {
         FileOperationTool fileOperationTool = new FileOperationTool();
         WebSearchTool webSearchTool = new WebSearchTool(searchApiKey);
         WebScrapingTool webScrapingTool = new WebScrapingTool();
@@ -31,6 +37,7 @@ public class ToolRegistration {
                 resourceDownloadTool,
                 terminalOperationTool,
                 pdfGenerationTool,
+                documentSummaryTool,
                 terminateTool
         );
     }

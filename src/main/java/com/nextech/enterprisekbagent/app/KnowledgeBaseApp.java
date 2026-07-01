@@ -1,6 +1,8 @@
-﻿package com.nextech.enterprisekbagent.app;
+package com.nextech.enterprisekbagent.app;
 
 import com.nextech.enterprisekbagent.advisor.MyLoggerAdvisor;
+import com.nextech.enterprisekbagent.rag.HybridDocumentRetriever;
+import com.nextech.enterprisekbagent.rag.KnowledgeBaseContextualQueryAugmenterFactory;
 import com.nextech.enterprisekbagent.rag.KnowledgeBaseRagCustomAdvisorFactory;
 import com.nextech.enterprisekbagent.rag.QueryRewriter;
 import jakarta.annotation.Resource;
@@ -8,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.api.Advisor;
-import org.springframework.ai.chat.client.advisor.vectorstore.QuestionAnswerAdvisor;
+import org.springframework.ai.rag.advisor.RetrievalAugmentationAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.memory.InMemoryChatMemoryRepository;
 import org.springframework.ai.chat.memory.MessageWindowChatMemory;
@@ -121,6 +123,9 @@ public class KnowledgeBaseApp {
     @Resource
     private QueryRewriter queryRewriter;
 
+    @Resource
+    private HybridDocumentRetriever hybridDocumentRetriever;
+
     /**
      * 和 RAG 知识库进行对话
      *
@@ -135,7 +140,10 @@ public class KnowledgeBaseApp {
                 .user(rewrittenMessage)
                 .advisors(spec -> spec.param(ChatMemory.CONVERSATION_ID, chatId))
                 .advisors(new MyLoggerAdvisor())
-                .advisors(new QuestionAnswerAdvisor(knowledgeBaseVectorStore))
+                .advisors(RetrievalAugmentationAdvisor.builder()
+                        .documentRetriever(hybridDocumentRetriever)
+                        .queryAugmenter(KnowledgeBaseContextualQueryAugmenterFactory.createInstance())
+                        .build())
 //                .advisors(knowledgeBaseRagCloudAdvisor)
 //                .advisors(new QuestionAnswerAdvisor(pgVectorVectorStore))
 //                .advisors(

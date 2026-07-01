@@ -1,4 +1,4 @@
-﻿package com.nextech.enterprisekbagent.demo.invoke;
+package com.nextech.enterprisekbagent.demo.invoke;
 
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
 import dev.langchain4j.model.chat.ChatLanguageModel;
